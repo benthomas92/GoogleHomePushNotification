@@ -1,0 +1,17 @@
+{
+  "name": "pushnotification",
+  "version": "1.0.0",
+  "description": "",
+  "main": "sendNotification",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "BMT",
+  "license": "MIT",
+  "dependencies": {
+    "@bmtben/google_home_notifier": "0.0.3",
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "ngrok": "^2.2.24"
+  }
+}

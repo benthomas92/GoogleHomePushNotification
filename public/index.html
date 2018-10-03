@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Google Home Notifier</title>
+    <source>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    </source>
+</head>
+
+<body>
+    <div class="container">
+
+        <h1> Enter the message below </h1>
+
+        <form action="/alexa-reminders" method="post">
+
+            <div class="form-group">
+                <label for="comment">Reminder:</label>
+                <textarea class="form-control" rows="5" name="reminder" id="reminder"></textarea>
+            </div>
+
+            <button type="submit" value="Create Profile" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
