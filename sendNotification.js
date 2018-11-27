@@ -1,4 +1,4 @@
-var googlehomenotifier = require('@bmtben/google_home_notifier')("192.168.0.9", "en-US", 1)
+var googlehomenotifier = require('@bmtben/google_home_notifier')("192.168.137.167", "en-US", 1)
 var express = require('express')
 var ngrok = require('ngrok')
 var bodyParser = require('body-parser')
@@ -9,7 +9,7 @@ var savedConfig = {}
 app.use(express.static('public'))
 var urlencodedParser = bodyParser.urlencoded({ extended: false })
 
-app.post('/alexa-reminders', urlencodedParser, function (req, res) {
+app.post('/google-notification', urlencodedParser, function (req, res) {
   var reminder = req.body.reminder;
   var date = req.body.datetime;
   googlehomenotifier.notify(reminder, function (result) {
